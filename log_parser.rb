@@ -78,7 +78,6 @@ def queue line
         c.slice!(f)
         c.sub!(", ","")
         #$stdout.puts "c: #{c}"
-        #e = "butt" if e == nil
         e.gsub!("\"","") if e[0] == "\"" 
         q[e] = [f.to_i,1]
         if $q_dequeue.key?(d) then
