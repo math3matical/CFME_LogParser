@@ -2,12 +2,12 @@ These scripts are meant to assist in analyzing certain logs from a CloudForms ap
 
 To run the log_parser.rb script:
 
-  # ruby log_parster.rb <evm.log>
+  $ ruby log_parster.rb <evm.log>
 
 
 To run the provision_scan.rb script:
 
- # ruby provision_scan.rb <automation.log> <evm.log> <request id>
+ $ ruby provision_scan.rb <automation.log> <evm.log> <request id>
 
 
 Please note, the provision_scan.rb can currently take multiple request ids as input.  Currently, use either all service request ids, or all lifecycle request ids (as the script will ask you which type you used, plans are to change this to denote a flag to determine this).  Also, you should be able to cat all of the automation logs in a region together, and same with evm.log.
